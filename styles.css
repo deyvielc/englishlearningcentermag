@@ -7,60 +7,21 @@ body {
     color: #333;
 }
 
-/* Header con logo y menú */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #012a4a; /* Azul oscuro */
-    color: white;
-}
-
-.logo img {
-    max-width: 150px;
-}
-
-.menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.menu a:hover {
-    text-decoration: underline;
-}
-
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #4CAF50 30%, #388E3C 70%);
-    padding: 50px;
-    border-radius: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    padding: 50px 0;
+    text-align: center;
     color: white;
+    border-radius: 15px;
 }
 
-.hero-content {
-    max-width: 50%;
-}
-
-.hero-content h1 {
+.hero h1 {
     font-size: 36px;
     margin: 0;
 }
 
-.hero-content p {
+.hero p {
     font-size: 18px;
     margin: 20px 0;
 }
@@ -74,49 +35,57 @@ body {
     font-weight: bold;
 }
 
-/* Media Container */
-.hero-media {
+/* Media Section */
+.media-section {
     display: flex;
-    gap: 20px;
-    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
-.welcome-video, .hero-image {
+/* Video */
+.media-video {
     flex: 1;
-    max-width: 48%;
     text-align: center;
 }
 
-.welcome-video iframe {
+.media-video iframe {
     width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9; /* Relación estándar para videos */
+    max-width: 500px;
+    height: 315px;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.hero-image img {
+/* Imagen */
+.media-image {
+    flex: 1;
+    text-align: center;
+}
+
+.media-image img {
     width: 100%;
+    max-width: 400px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
+/* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
-    .hero {
+    .media-section {
         flex-direction: column;
         text-align: center;
     }
 
-    .hero-content, .welcome-video, .hero-image {
+    .media-image img,
+    .media-video iframe {
         max-width: 100%;
     }
-
-    .hero-media {
-        flex-direction: column;
-    }
-
-    .menu ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
