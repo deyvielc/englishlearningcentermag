@@ -98,9 +98,10 @@ header nav ul li a {
     margin-bottom: 20px;
 }
 
+/* Estilo ajustado para el video en formato "short" */
 .welcome-video iframe {
-    width: 100%;
-    height: 315px;
+    width: 500px; /* Ajustar ancho más estrecho */
+    height: 900px; /* Alto para "shorts" alargados */
     border-radius: 10px;
 }
 
@@ -132,5 +133,10 @@ footer {
 
     .hero .btn {
         padding: 15px 30px; /* Hace el botón más grande en móviles */
+    }
+
+    .welcome-video iframe {
+        width: 100%; /* Hace que el iframe ocupe todo el ancho en móviles */
+        height: 500px; /* Ajuste de altura en móviles */
     }
 }
