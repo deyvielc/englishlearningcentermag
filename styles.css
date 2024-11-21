@@ -37,38 +37,16 @@ header nav ul li a {
 }
 
 /* Hero Section */
-.hero-content iframe {
-    width: 100%; /* Ajustamos al 100% del contenedor */
-    height: 500px; /* Puedes ajustar esta altura si es necesario */
-    border: none;
-    border-radius: 10px; /* Bordes redondeados */
-}
-
-}
-.hero .btn {
-    background-color: #f4a261; /* Naranja */
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
+.hero {
+    background: linear-gradient(135deg, #4CAF50 30%, #388E3C 70%); /* Verde biselado */
+    padding: 50px 0; /* Agregamos padding para dar espacio alrededor */
+    border-radius: 15px; /* Bordes redondeados */
 }
 .hero-content {
     display: flex;
     justify-content: space-between; /* Deja espacio entre el video y la imagen */
     align-items: center; /* Centra verticalmente */
     gap: 20px; /* Espacio entre el video y la imagen */
-}
-
-.banner-img {
-    width: 45%; /* Ajustamos el ancho de la imagen */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Agregamos una sombra sutil */
-}
-.hero {
-    background: linear-gradient(135deg, #4CAF50 30%, #388E3C 70%); /* Verde biselado */
-    padding: 50px 0; /* Agregamos padding para dar espacio alrededor */
-    border-radius: 15px; /* Bordes redondeados */
 }
 
 .hero-content h1 {
@@ -80,6 +58,15 @@ header nav ul li a {
     color: white;
     font-size: 18px;
     margin: 20px 0;
+}
+
+.hero .btn {
+    background-color: #f4a261; /* Naranja */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 /* Sección de video */
@@ -102,6 +89,13 @@ header nav ul li a {
     border-radius: 10px;
 }
 
+/* Imagen banner nuevas clases */
+.banner-img {
+    width: 45%; /* Ajustamos el ancho de la imagen */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Agregamos una sombra sutil */
+}
+
 /* Footer */
 footer {
     background-color: #012a4a;
@@ -110,6 +104,8 @@ footer {
     padding: 10px 0;
     font-size: 14px;
 }
+
+/* Media Queries */
 @media (max-width: 768px) {
     .hero-content {
         flex-direction: column; /* Coloca los elementos de arriba hacia abajo en móviles */
@@ -125,7 +121,3 @@ footer {
         padding: 30px 20px; /* Ajusta el padding para que no se vean sin espacio */
     }
 }
-.hero-content iframe, .banner-img {
-    border-radius: 0; /* Elimina los bordes redondeados */
-}
-
