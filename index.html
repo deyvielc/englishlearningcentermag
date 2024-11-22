@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Learning Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004643;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #abd1c6;
+            padding: 0.5em 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #004643;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #f9bc60;
+        }
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2em;
+        }
+        .card {
+            flex: 1 1 calc(300px - 1em);
+            max-width: 300px;
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #eef6f6;
+            text-align: left;
+        }
+        footer {
+            background-color: #004643;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 315px;
+            margin: 1em auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="English Learning Center" class="responsive-img" style="max-height: 100px;">
+        <h1>Welcome to English Learning Center</h1>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#placement">Placement Test</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="inicio">
+        <h2>Welcome</h2>
+        <p>Learn English with the best teaching methods and personalized attention!</p>
+        <img src="imagenesnuevasclase1.png" alt="English Class" class="responsive-img">
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At English Learning Center, we are committed to helping you achieve your language goals through innovative and personalized teaching methods.</p>
+    </section>
+    <section id="courses" class="container">
+        <div class="card">
+            <h3>General English</h3>
+            <p>Improve your everyday communication skills.</p>
+        </div>
+        <div class="card">
+            <h3>Business English</h3>
+            <p>Enhance your professional English for the workplace.</p>
+        </div>
+        <div class="card">
+            <h3>Exam Preparation</h3>
+            <p>Prepare for TOEFL, IELTS, and more.</p>
+        </div>
+    </section>
+    <section id="placement">
+        <h2>Placement Test</h2>
+        <p>Take our free placement test to determine your English level.</p>
+        <iframe src="https://youtube.com/shorts/CcQn4MKh8ps?feature=share" title="Placement Test Video"></iframe>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email us at: <a href="mailto:info@englishlearningcenter.com">info@englishlearningcenter.com</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 English Learning Center. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
