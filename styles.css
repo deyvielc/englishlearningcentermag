@@ -10,15 +10,16 @@ body {
 /* Header y menú */
 .header {
     background-color: #4CAF50; /* Verde */
-    padding: 20px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header .logo img {
-    width: 150px; /* Ajusta el tamaño del logo */
+    width: 120px; /* Ajusta el tamaño del logo */
 }
 
 header nav ul {
@@ -37,28 +38,30 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    color: #f4a261; /* Cambia a un color más claro al pasar el mouse */
 }
 
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #4CAF50 30%, #388E3C 70%);
-    padding: 50px 0;
+    padding: 60px 20px;
     text-align: center;
     color: white;
     border-radius: 15px;
+    margin: 20px;
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 2.5em; /* Tamaño de fuente más grande */
     margin: 0;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 1.2em; /* Tamaño de fuente más grande */
     margin: 20px 0;
 }
 
@@ -66,9 +69,14 @@ header nav ul li a:hover {
     background-color: #f4a261;
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e76f51; /* Color más oscuro al pasar el mouse */
 }
 
 /* Sección de video y imagen */
@@ -76,68 +84,4 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    gap: 30px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 1200px;
-}
-
-/* Video */
-.media-video {
-    flex: 1;
-    text-align: center;
-}
-
-.media-video iframe {
-    width: 100%;
-    max-width: 500px;
-    height: 315px;
-    aspect-ratio: 16 / 9;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Imagen */
-.media-image {
-    flex: 1;
-    text-align: center;
-}
-
-.media-image img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
-footer {
-    background-color: #012a4a;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 14px;
-}
-
-/* Media Query para dispositivos móviles */
-@media (max-width: 768px) {
-    /* Menú en dispositivos móviles */
-    .header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .media-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .media-image img,
-    .media-video iframe {
-        max-width: 100%;
-    }
-}
+    padding: 50px 20
