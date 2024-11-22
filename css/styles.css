@@ -20,7 +20,7 @@ header {
 
 /* Logo Styles */
 header .logo-container {
-    margin-bottom: 10px; /* Espacio debajo del logo */
+    margin-bottom: 5px; /* Espacio debajo del logo */
 }
 
 header .logo {
