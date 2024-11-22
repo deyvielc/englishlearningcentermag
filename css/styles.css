@@ -17,15 +17,16 @@ header {
     align-items: center;
     flex-direction: column; /* Centra el logo y el texto en columna */
     position: relative; /* Necesario para el posicionamiento del menú */
+    margin-bottom: 0; /* Eliminar el margen abajo del header */
 }
 
 /* Logo Styles */
 header .logo-container {
-    margin-bottom: 5px; /* Espacio debajo del logo */
+    margin-bottom: 0; /* Elimina el margen debajo del logo */
 }
 
 header .logo {
-    max-height: 150px; /* Tamaño máximo del logo */
+    max-height: 120px; /* Ajusta el tamaño del logo */
     width: auto; /* Mantener proporciones del logo */
 }
 
@@ -34,14 +35,15 @@ header h1 {
     font-size: 1.8em;
     font-weight: bold;
     margin: 0;
-    padding-top: 10px; /* Reduce el espacio arriba del título */
+    padding-top: 5px; /* Reduce el espacio arriba del título */
 }
 
 /* Navigation Menu */
 nav {
-    position: sticky;
-    top: 0; /* Hace que el menú quede pegado en la parte superior */
+    position: sticky; /* Hace que el menú quede fijo al hacer scroll */
+    top: 0; /* Pegado a la parte superior */
     z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    background-color: #2E7D32; /* Verde más oscuro */
     width: 100%;
 }
 
@@ -51,7 +53,6 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #2E7D32; /* Verde más oscuro */
 }
 
 nav ul li {
@@ -102,3 +103,4 @@ footer {
     text-align: center;
     padding: 1em 0;
 }
+
