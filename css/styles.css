@@ -22,11 +22,12 @@ header {
 
 /* Logo Styles */
 header .logo-container {
-    margin-bottom: 0; /* Elimina el margen debajo del logo */
+    margin: 0; /* Elimina el margen debajo del logo */
+    padding: 0; /* Elimina el padding */
 }
 
 header .logo {
-    max-height: 120px; /* Ajusta el tamaño del logo */
+    max-height: 100px; /* Ajusta el tamaño del logo */
     width: auto; /* Mantener proporciones del logo */
 }
 
@@ -35,7 +36,7 @@ header h1 {
     font-size: 1.8em;
     font-weight: bold;
     margin: 0;
-    padding-top: 5px; /* Reduce el espacio arriba del título */
+    padding: 5px 0; /* Reduce el espacio arriba y abajo del título */
 }
 
 /* Navigation Menu */
@@ -103,4 +104,3 @@ footer {
     text-align: center;
     padding: 1em 0;
 }
-
