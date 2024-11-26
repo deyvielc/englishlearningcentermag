@@ -1,106 +1,61 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 /* Header Styles */
 header {
-    background-color: #4CAF50; /* Verde brillante */
-    color: white;
-    text-align: center;
-    padding: 0.5em 0; /* Reduce el padding superior e inferior */
-    display: flex;
-    justify-content: center; /* Centra todo en el header */
-    align-items: center;
-    flex-direction: column; /* Centra el logo y el texto en columna */
-    position: relative; /* Necesario para el posicionamiento del menú */
-    margin-bottom: 0; /* Eliminar el margen abajo del header */
+  background-color: #4CAF50; /* Verde brillante */
+  color: white;
+  padding: 0.5em 0; /* Reduce el padding superior e inferior */
+  display: flex;
+  justify-content: space-between; /* Distancia elementos horizontalmente */
+  align-items: center;
+  position: relative; /* Necesario para el posicionamiento del menú */
+  margin-bottom: 0; /* Eliminar el margen abajo del header */
 }
 
-/* Logo Styles */
 header .logo-container {
-    margin: 0; /* Elimina el margen debajo del logo */
-    padding: 0; /* Elimina el padding */
+  margin: 0; /* Elimina el margen debajo del logo */
+  padding: 0; /* Elimina el padding */
 }
 
 header .logo {
-    max-height: 100px; /* Ajusta el tamaño del logo */
-    width: auto; /* Mantener proporciones del logo */
+  max-height: 100px; /* Ajusta el tamaño del logo */
+  width: auto; /* Mantener proporciones del logo */
 }
 
 /* Title Styles */
 header h1 {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin: 0;
-    padding: 5px 0; /* Reduce el espacio arriba y abajo del título */
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0; /* Reduce el espacio arriba y abajo del título */
 }
 
 /* Navigation Menu */
 nav {
-    position: sticky; /* Hace que el menú quede fijo al hacer scroll */
-    top: 0; /* Pegado a la parte superior */
-    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
-    background-color: #2E7D32; /* Verde más oscuro */
-    width: 100%;
+  position: sticky; /* Hace que el menú quede fijo al hacer scroll */
+  top: 0; /* Pegado a la parte superior */
+  z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+  background-color: #2E7D32; /* Verde más oscuro */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;  /* Permite el salto de línea en el menú */
 }
 
 nav ul li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 0.5em;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #66BB6A;
-}
-
-/* Main Content */
-main {
-    padding: 1em;
-    text-align: center;
-}
-
-main .responsive-img {
-    max-width: 100%; /* Ajusta la imagen al tamaño del contenedor */
-    height: auto; /* Mantiene las proporciones */
-    margin: 1em 0;
-    max-height: 400px; /* Limita la altura de las imágenes */
-    border: 2px solid #4CAF50; /* Añade borde verde */
-    border-radius: 10px; /* Bordes redondeados */
-}
-
-/* Video Styling */
-.main .video {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    aspect-ratio: 16 / 9; /* Mantiene proporciones del video */
-}
-
-/* Footer */
-footer {
-    background-color: #2E7D32;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
+  text-decoration: none;
+  color: white;
